@@ -1,0 +1,10 @@
+Again — Sisyphus piano: an original composition for this game.
+
+Piano samples: Salamander Grand Piano by Alexander Holm.
+License: Creative Commons Attribution 3.0 Unported
+https://creativecommons.org/licenses/by/3.0/
+Source: https://github.com/Tonejs/audio/tree/efd8296360f9526e379bfbe5c1698ff54d6a1d34/salamander
+
+Modifications: pitch-shifting, original arrangement, envelopes, EQ, stereo
+reverb, and MP3 encoding. No endorsement by the sample author is implied.
+The score and renderer are in scripts/render-piano.py in the Sisyphus repository.

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#343a35" />
+  <meta name="description" content="Sisyphus. A stone. A mountain. The quiet choice to begin again." />
+  <title>Sisyphus</title>
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <canvas id="world" tabindex="0" aria-label="Sisyphus on a mountain. Hold D or right arrow to push, A or left arrow to descend, Space to brace, Escape to pause. On touch screens, hold the left or right side to move, the middle to brace, and double-tap to pause."></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <dialog id="pause-dialog" aria-label="Paused">
+    <button id="resume-button">continue...</button>
+  </dialog>
+  <p id="loading-error" role="alert" hidden></p>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

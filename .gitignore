@@ -1,0 +1,26 @@
+# Dependencies, builds, and local caches
+/node_modules/
+/dist/
+/.vite/
+/coverage/
+
+# Browser captures and exploratory scripts
+/test-results/
+/playwright-report/
+/blob-report/
+/.local-archive/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and editor/OS files
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

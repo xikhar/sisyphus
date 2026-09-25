@@ -1,0 +1,56 @@
+{
+  "head": {
+    "left": 92,
+    "top": 28,
+    "width": 279,
+    "height": 330
+  },
+  "torso": {
+    "left": 517,
+    "top": 4,
+    "width": 234,
+    "height": 393
+  },
+  "cloth": {
+    "left": 878,
+    "top": 122,
+    "width": 306,
+    "height": 248
+  },
+  "upper-arm": {
+    "left": 148,
+    "top": 432,
+    "width": 139,
+    "height": 343
+  },
+  "forearm": {
+    "left": 577,
+    "top": 424,
+    "width": 137,
+    "height": 388
+  },
+  "thigh": {
+    "left": 966,
+    "top": 426,
+    "width": 175,
+    "height": 355
+  },
+  "shin": {
+    "left": 148,
+    "top": 819,
+    "width": 134,
+    "height": 392
+  },
+  "foot": {
+    "left": 487,
+    "top": 934,
+    "width": 278,
+    "height": 190
+  },
+  "boulder": {
+    "left": 843,
+    "top": 817,
+    "width": 399,
+    "height": 406
+  }
+}

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/cormorant-garamond-italic.ttf') format('truetype');
+}
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; overscroll-behavior: none; background: #343a35; }
+body { -webkit-tap-highlight-color: transparent; user-select: none; }
+[hidden] { display: none !important; }
+#world { position: fixed; inset: 0; display: block; width: 100%; height: 100%; outline: none; touch-action: none; opacity: 0; transition: opacity 1.4s; }
+body.ready #world { opacity: 1; }
+body.record-mode, body.record-mode #world { cursor: none; }
+body.record-mode #world { transition: none; }
+.record-fade { position: fixed; inset: 0; z-index: 10; background: #080b09; opacity: 0; pointer-events: none; }
+.vignette, .grain { position: fixed; inset: 0; pointer-events: none; }
+.vignette { background: radial-gradient(ellipse at 50% 42%, transparent 55%, #15232628), linear-gradient(transparent 65%, #101d1929); }
+.grain { opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.83' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.7' filter='url(%23n)'/%3E%3C/svg%3E"); }
+#pause-dialog { padding: 0; border: 0; background: transparent; overflow: visible; }
+#pause-dialog::backdrop { background: #1d27231f; backdrop-filter: blur(13px); -webkit-backdrop-filter: blur(13px); }
+#resume-button { border: 0; background: transparent; color: #fff5df; font: italic 400 clamp(34px, 4vw, 50px) 'Cormorant Garamond', Georgia, serif; letter-spacing: .3px; text-shadow: 0 2px 28px #17292180; padding: 28px 40px; cursor: pointer; transition: opacity .2s; }
+#resume-button:hover { opacity: .75; }
+#resume-button:focus-visible { outline: none; text-shadow: 0 0 18px #fff5df90, 0 2px 28px #17292180; }
+#loading-error { position: fixed; top: 45%; width: 100%; padding: 0 30px; text-align: center; color: #f0e9d8; font: 16px/1.8 Georgia, serif; }
+@media (prefers-reduced-motion: reduce) { #world { transition: none; } }
